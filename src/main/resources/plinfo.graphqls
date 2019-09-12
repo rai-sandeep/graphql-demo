@@ -1,0 +1,16 @@
+type Query {
+	plteam(name: String, shortName: ID, tablePosition: Int): Team
+}
+
+type Team {
+	name: String
+	shortName: ID
+	tablePosition: Int
+	coach: Coach
+}
+
+type Coach {
+	name: String
+	shortName: ID
+	country: String
+}
